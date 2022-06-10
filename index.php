@@ -1,6 +1,5 @@
 <?php
 include __DIR__ . "/database.php";
-var_dump($database);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +15,24 @@ var_dump($database);
 
 <body>
 
-
+    <div class="albums_list py-4">
+        <div class="container">
+            <div class="row row-cols-3 row-cols-md-6 justify-content-center">
+                <?php foreach ($database as $album) { ?>
+                    <div class="album_card">
+                        <div class="card_img">
+                            <img src="<?php echo $album["poster"] ?>" alt="">
+                        </div>
+                        <div class="album_description">
+                            <h3><?php echo $album["title"]?></h3>
+                            <p><?php echo $album["author"]?></p>
+                            <p><?php echo $album["year"]?></p>
+                        </div>
+                    </div>
+                <?php } ?>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
