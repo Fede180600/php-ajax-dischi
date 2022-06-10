@@ -1,5 +1,5 @@
 <?php
-include __DIR__ . "/database.php";
+include __DIR__ . "/../database.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,14 +16,14 @@ include __DIR__ . "/database.php";
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- LINK CSS -->
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 
 <body>
 
     <div class="app-container">
         <header>
-            <img src="img/logo.png" alt="">
+            <img src="../img/logo.png" alt="">
         </header>
 
         <main>
